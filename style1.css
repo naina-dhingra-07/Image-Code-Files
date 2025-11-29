@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.5;
+}
+
+/* Section Heading */
+.pricing-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.pricing-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtext {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Cards Layout */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Pricing Card */
+.pricing-card {
+    width: 300px;
+    padding: 30px 25px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Title + Price */
+.plan-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.price.free {
+    color: green;
+}
+
+.price.premium {
+    color: #3b29ff;
+}
+
+.per-month {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Description */
+.desc {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid #3b29ff;
+    color: #3b29ff;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #3b29ff;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-card {
+        width: 90%;
+    }
+
+    .pricing-section h1 {
+        font-size: 2rem;
+    }
+}
